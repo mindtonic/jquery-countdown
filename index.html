@@ -1,0 +1,18 @@
+ <html>
+ <head>
+<link rel="stylesheet" href="countdown.css" type="text/css" />
+ <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+ <script type="text/javascript" src="countdown.js"></script>
+ <script type="text/javascript">
+	$(document).ready(function(){ $(".countdown").countdown(); });
+	$(document).ready(function(){ $("#countdown").countdown({'limit' : 100, 'counter_div' : 'myNiftyCounter'}); });
+	$(document).ready(function(){ $(".countdown2").countdown({'limit' : 10}); });
+ </script>
+ </head>
+ <body>
+   <input type="text" class="countdown" />
+   <input type="text" class="countdown" />
+   <input type="text" id="countdown" />
+   <input type="text" class="countdown2" />
+ </body>
+ </html>
